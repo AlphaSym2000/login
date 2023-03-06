@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.content{
+    margin: 1.3rem;
+    font-family: sans-serif;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.3rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+form {
+    max-width: 500px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-top: 20px;
+  }
+
+  label{
+    font: 14px;
+    font-family: sans-serif;
+  }
+
+  input[type=text]{
+    width: 100%;
+    padding: 6px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  input[type=password] {
+    width: 100%;
+    padding: 6px 12px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  a {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    color: #1984ff;
+    text-decoration: none;
+  }
+
+  .btn{
+    background-color: #1984ff;
+    color: white;
+    padding: 10px 12px;
+    margin: 5px 0px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  hr{
+    margin-top: 17px;
+  }
+
+  .h3{
+    font-size: larger;
+    margin-top: 17px;
+  }
+  .card{
+    color: #1984ff;
+  }
+
+  ul{
+    list-style-type: disc;
+    margin:0 2rem;
+  }
+
+  .footertext p{
+    margin: 10px;
+  }
+  .demo{
+    color: #1984ff;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    background-color: #024c8d;
+    color: white;
+    font-family: sans-serif;
+  }
+  .footer p{
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 4px 0 0;
+  }

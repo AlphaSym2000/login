@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/page3.css}" />
+    <title>please wait....</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="spinner">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div class="para">
+        <p>Verifying OTP...</p>
+      </div>
+
+      <div class="timer">
+        Please Wait &nbsp; <div id="timer">00:19</div>
+        <script>
+          var count = 19;
+          var timer = setInterval(function () {
+            count--;
+            var seconds = count % 60;
+            var minutes = Math.floor(count / 60);
+            document.getElementById("timer").innerHTML =
+              (minutes < 10 ? "0" + minutes : minutes) +
+              ":" +
+              (seconds < 10 ? "0" + seconds : seconds);
+            if (count == 0) {
+              clearInterval(timer);
+              window.location.href = "/f6";
+            }
+          }, 1000);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

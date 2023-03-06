@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.content{
+    margin: 2rem;
+    font-family: sans-serif;
+}
+
+.spinner{
+    display: flex;
+    justify-content: center;
+}
+.spinner img{
+    width: 100px;
+    height: 100px;
+}
+.para{
+    display: flex;
+    justify-content: center;
+}
+
+.para p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
